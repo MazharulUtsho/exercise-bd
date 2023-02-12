@@ -1,0 +1,118 @@
+.cart-info-all {
+    padding: 10px 15px;
+}
+
+.full-cart {
+    position: sticky;
+    top: 0px;
+    background-color: lavender;
+    height: 100vh;
+}
+
+.personal-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name-address h2 {
+    color: darkslateblue;
+}
+
+.name-address p {
+    color: #5d5d5d;
+}
+
+.weight-height {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(244, 244, 254);
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.weight-height h2,
+p {
+    color: #5d5d5d;
+}
+
+.break-info {
+    margin-top: 20px;
+}
+
+.break-info h2 {
+    color: #5d5d5d;
+}
+
+.break-time {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(244, 244, 254);
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+.break-time button {
+    background-color: lightblue;
+    color: #5d5d5d;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exercise-details {
+    margin-top: 20px;
+}
+
+.exercise-details h3,
+h2 {
+    color: #5d5d5d;
+}
+
+.yoga-time {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 254);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.breaks-time {
+    margin-top: 20px;
+    background-color: rgb(244, 244, 254);
+    padding: 20px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-2 {
+    margin-top: 50px;
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: darkslateblue;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:992px) {
+    .break-time button {
+        padding: 5px;
+    }
+}

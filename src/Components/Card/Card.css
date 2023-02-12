@@ -1,0 +1,53 @@
+.card-info img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-info {
+    border: 2px solid #e3dfdf;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 5px 10px #e3dfdf;
+    height: 520px;
+    position: relative;
+}
+
+.card-info h2 {
+    color: #5d5d5d;
+    margin-top: 5px;
+}
+
+.card-info p {
+    color: #5d5d5d;
+    margin-top: 3px;
+}
+
+.card-info h3 {
+    margin-top: 3px;
+    color: #5d5d5d;
+}
+
+.only-info {
+    padding: 10px 10px;
+}
+
+.btn-1 {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: darkslateblue;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1400px) {
+    .card-info img {
+        width: 250px;
+        height: 200px;
+    }
+}
