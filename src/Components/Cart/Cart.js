@@ -2,41 +2,29 @@ import './Cart.css';
 import personalImg from '../../utsho.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { getStoredCart } from '../Utilities/Utilities';
 const Cart = (props) => {
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("Activity Completed!!");
     const newCart = props.newCart;
     let totalTime = 0;
     for (const product of newCart) {
         let time = parseFloat(product.time);
         totalTime = totalTime + time;
     }
-    // const [breakTime, setBreakTime] = useState(0);
-    // // console.log(breakTime);
-    // const buttonHandler = (event) => {
-    //    let breakTime = {};
-    // }
-    // useEffect(() => {
-    //     const storedTimeArray = [];
-    //     const storedTime = getStoredCart();
-    //     storedTimeArray.push(storedTime);
-    //     setBreakTime(storedTimeArray);
-    // }, [])
     const [breakTime, setBreakTime] = useState(0);
     const buttonHandler = (time) => {
-        // let breakTime = {};
         setBreakTime(time);
-        // breakTime = time;
-        // localStorage.setItem('breakTime', JSON.stringify(breakTime))
+        localStorage.setItem('breakTime', JSON.stringify(time));
     }
-    // useEffect(() => {
-    //     const storedArray = [];
-    //     const storedTime = getStoredCart();
-    //     storedArray.push(storedTime);
-    //     setBreakTime(storedArray);
-    // }, [])
+    useEffect(() => {
+        const storedData = [];
+        const storedTime = getStoredCart();
+        storedData.push(storedTime);
+        setBreakTime(storedData);
+    }, [])
     return (
         <div className='full-cart'>
             <div className="cart-info-all">
@@ -75,11 +63,11 @@ const Cart = (props) => {
                     <h2>Yoga Total Time:</h2>
                     <div className="yoga-time">
                         <h3>Yoga Time:</h3>
-                        <p>{totalTime}</p>
+                        <p>{totalTime}s</p>
                     </div>
                     <div className="breaks-time">
                         <h3>Break Time:</h3>
-                        <p>{breakTime}</p>
+                        <p>{breakTime}s</p>
                     </div>
                 </div>
                 <button className='btn-2' onClick={notify}>Activity Completed</button>
