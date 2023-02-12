@@ -3,7 +3,10 @@ import personalImg from '../../utsho.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Cart = (props) => {
+    const notify = () => toast("Wow so easy!");
     const newCart = props.newCart;
     let totalTime = 0;
     for (const product of newCart) {
@@ -79,7 +82,8 @@ const Cart = (props) => {
                         <p>{breakTime}</p>
                     </div>
                 </div>
-                <button className='btn-2'>Activity Completed</button>
+                <button className='btn-2' onClick={notify}>Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );
