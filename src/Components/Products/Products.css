@@ -196,6 +196,10 @@ h2 {
     }
 }
 
+.question-answer1 {
+    border: 2px solid red;
+}
+
 @media only screen and (max-width:992px) {
     .container {
         padding-right: 0px;
