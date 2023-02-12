@@ -204,6 +204,10 @@ h2 {
     border: 2px solid green;
 }
 
+.question-answer3 {
+    border: 2px solid green;
+}
+
 @media only screen and (max-width:992px) {
     .container {
         padding-right: 0px;
