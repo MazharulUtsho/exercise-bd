@@ -208,6 +208,7 @@ h2 {
 
 .question-answer3 {
     border: 2px solid green;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width:992px) {
