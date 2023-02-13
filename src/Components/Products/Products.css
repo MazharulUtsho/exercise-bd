@@ -197,18 +197,24 @@ h2 {
 }
 
 .question-answer1 {
-    border: 2px solid red;
+    border: 2px solid lightblue;
     margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .question-answer2 {
-    border: 2px solid green;
+    border: 2px solid lightblue;
     margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .question-answer3 {
-    border: 2px solid green;
+    border: 2px solid lightblue;
     margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width:992px) {

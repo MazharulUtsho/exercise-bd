@@ -20,10 +20,12 @@ const Cart = (props) => {
         localStorage.setItem('breakTime', JSON.stringify(time));
     }
     useEffect(() => {
-        const storedData = [];
+        // const storedData = [];
         const storedTime = getStoredCart();
-        storedData.push(storedTime);
-        setBreakTime(storedData);
+        console.log(storedTime);
+        // storedData.push(storedTime);
+        // console.log(storedData);
+        setBreakTime(storedTime);
     }, [])
     return (
         <div className='full-cart'>
